@@ -1,6 +1,6 @@
 module Api
   module V1
-    class BooksController < ApplicationController
+    class BooksController < ApiController
       include ActionController::HttpAuthentication::Token
 
       MAX_PAGINATION_LIMIT = 100

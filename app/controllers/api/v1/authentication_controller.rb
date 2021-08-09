@@ -1,6 +1,6 @@
 module Api
   module V1
-    class AuthenticationController < ApplicationController
+    class AuthenticationController < ApiController
       class AuthenticationError < StandardError; end
 
       rescue_from ActionController::ParameterMissing, with: :parameter_missing
